@@ -20,7 +20,7 @@ import TradePrice from '../../components/swap/TradePrice'
 import TokenWarningModal from '../../components/TokenWarningModal'
 import SyrupWarningModal from '../../components/SyrupWarningModal'
 import ProgressSteps from '../../components/ProgressSteps'
-import Ticker from '../../components/Ticker'
+// import Ticker from '../../components/Ticker'
 // import ScriptTag from 'react-script-tag'
 
 
@@ -339,7 +339,7 @@ export default function Swap() {
               otherCurrency={currencies[Field.OUTPUT]}
               id="swap-currency-input"
             />
-            <Ticker/>
+            {/* <Ticker/> */}
            <AutoColumn justify="space-between">
               <AutoRow justify={isExpertMode ? 'space-between' : 'center'} style={{ padding: '0 1rem' }}>
                 <ArrowWrapper clickable>
