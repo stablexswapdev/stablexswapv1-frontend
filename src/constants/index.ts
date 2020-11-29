@@ -35,14 +35,14 @@ export const USDC = new Token(ChainId.BSCTESTNET, '0x64544969ed7ebf5f08367923332
 // export const ETH = new Token(ChainId.MAINNET, '0x2170ed0880ac9a755fd29b2688956bd959f933f8', 18, 'ETH', 'Ethereum Token')
 
 const WETH_ONLY: ChainTokenList = {
-//   [ChainId.MAINNET]: [WETH[ChainId.MAINNET]],
+  [ChainId.MAINNET]: [WETH[ChainId.MAINNET]],
   [ChainId.BSCTESTNET]: [WETH[ChainId.BSCTESTNET]]
 }
 
 // used to construct intermediary pairs for trading
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   ...WETH_ONLY,
-//   [ChainId.MAINNET]: [DAI, BUSD, USDT, USDC, QUSD],
+  [ChainId.MAINNET]: [DAI, BUSD, USDT, USDC],
    [ChainId.BSCTESTNET]: [DAI, BUSD, USDT, USDC]
 }
 
