@@ -7,12 +7,12 @@ import { injected, bsc, walletconnect } from '../connectors'
 
 // Updated with New Router PROXY Address
 // Testnet Router Address Active
-// export const ROUTER_ADDRESS =  '0x112e6175e859Bf3d0f7740Ff7b9e32Be8C709a2C'
+export const ROUTER_ADDRESS =  '0x69F124636c7f56c52474f69A893035aDf9D29fE9'
 
 // Router address Mainnet 0xCC6F313d29534B436A6D26eEe8EBcb1EC33BFa53
 
 // PROXY
-export const ROUTER_ADDRESS = '0xc7fA7951187F91153851b0F9Ab2d032Abd0f2f0C'
+// export const ROUTER_ADDRESS = '0xc7fA7951187F91153851b0F9Ab2d032Abd0f2f0C'
 
 // a list of tokens by chain
 type ChainTokenList = {
@@ -73,14 +73,14 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
-  [ChainId.MAINNET]: [
-    [BUSD, USDT],
-    [USDT, DAI],
-    [QUSD, BUSD]
-//   ],
-//   [ChainId.TESTNET]: [
+//   [ChainId.MAINNET]: [
 //     [BUSD, USDT],
-//     [USDT, DAI]
+//     [USDT, DAI],
+//     [QUSD, BUSD]
+//   ],
+  [ChainId.TESTNET]: [
+    [tBUSD, tUSDT],
+    [tUSDT, tDAI]
   ]
 }
 
