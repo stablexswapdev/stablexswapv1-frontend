@@ -78,7 +78,7 @@ export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } 
 //     [USDT, DAI],
 //     [QUSD, BUSD]
 //   ],
-  [ChainId.TESTNET]: [
+  [ChainId.BSCTESTNET]: [
     [tBUSD, tUSDT],
     [tUSDT, tDAI]
   ]
